@@ -22,7 +22,7 @@ nav > header{
     font-size: 20px;
     padding-top: 20px;
     padding-left: 10px;
-    font-weight: bold;
+    font-weight: 500;
     color: #042f2e;
 }
 
@@ -34,19 +34,16 @@ nav > ul{
     overflow-x: hidden;
 }
 
-nav > ul, #main-doc{
-    scrollbar-width:thin;
-    scrollbar-color: #e7e5e4 #fafaf9;
-}
 
 nav > ul > li > a{
+    width: 100%;
+    padding: 30px;
     text-decoration: none;
     color: black;
     display: block;
 }
 
 nav > ul > li{
-    padding: 30px;
     font-size: 20px;
     border-top: 0.01rem solid;
     cursor: pointer;
@@ -83,7 +80,7 @@ section{
 
 header{
     font-size: 1.5em;
-    font-weight: bolder;
+    font-weight: 400;
 }
 
 p{
@@ -96,6 +93,7 @@ pre{
     border-radius: 5px;
     padding: 20px;
     margin-top: 15px;
+    overflow-x: scroll;
 }
 
 li {
@@ -112,6 +110,43 @@ span{
 .reference-list, .types-loops{
     padding-top: 10px;
 }
-/* insert media query for screen size */
 
-/* media query nav bar for size 631px and less */
+img{
+    max-width: 40px;
+    max-height: 40px;
+    position: absolute;
+    right: 15px;
+}
+
+/* Scroll Bar */
+nav > ul, #main-doc, pre{
+    scrollbar-width:thin;
+    scrollbar-color: #e7e5e4 #fafaf9;
+}
+
+
+/* insert media query for screen size - 828 */
+
+@media screen and (max-width: 861px) {
+    #navbar{
+        min-width: 862px;
+        max-height: 150px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        border: 0.1rem solid;
+        background-color: #ecfeff;
+        z-index: 1;
+        }
+
+    #main-doc{
+        margin-left: 20px;
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 461px) {
+    /* FOR MOBILE ONLY */
+    
+}
