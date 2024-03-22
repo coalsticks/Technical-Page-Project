@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "arial", "sans-serif";
+    box-sizing: border-box;
+}
+
+/*NAV BAR*/
+
+#navbar{
+    max-width: 290px;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    border-right: 0.1rem solid;
+    background-color: #ecfeff;
+}
+
+nav > header{
+    font-size: 20px;
+    padding-top: 20px;
+    padding-left: 10px;
+    font-weight: bold;
+    color: #042f2e;
+}
+
+nav > ul{
+    padding-top: 30px;
+    list-style-type: none;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+nav > ul, #main-doc{
+    scrollbar-width:thin;
+    scrollbar-color: #e7e5e4 #fafaf9;
+}
+
+nav > ul > li > a{
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+nav > ul > li{
+    padding: 30px;
+    font-size: 20px;
+    border-top: 0.01rem solid;
+    cursor: pointer;
+    list-style-type: none;
+    margin-left: 0;
+}
+
+.nav-link:hover{
+    background-color: #ccfbf1;
+}
+
+
+/* MAIN CONTAINER */
+
+#main-doc{
+    position: absolute;
+    min-width: 200px;
+    height: 100%;
+    padding-top: 17px;
+    padding-right: 25px;
+    margin-left: 340px;
+    overflow-y: scroll;
+}
+
+#References{
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+section{
+    padding-top: 17px;
+    padding-right: 20px;
+}
+
+header{
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+p{
+    padding-top: 20px;
+}
+
+pre{
+    background-color: #e5e7eb;
+    border: 0.1rem solid #e5e7eb;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 15px;
+}
+
+li {
+    list-style: disc outside none;
+    display: list-item;
+    padding-top: 10px;
+    margin-left: 1em;
+}
+
+span{
+    font-weight: bold;
+}
+
+.reference-list, .types-loops{
+    padding-top: 10px;
+}
+/* insert media query for screen size */
+
+/* media query nav bar for size 631px and less */

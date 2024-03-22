@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Technical Documentation</title>
+</head>
+<body>
+    <!-- NAV BAR -->
+    <nav id="navbar">
+        <header>JAVASCRIPT TECHNICAL DOCUMENTATION</header>
+        <ul>
+            <li class="nav-link"><a href=#Introduction>Introduction</a></li>
+            <li class="nav-link"><a href=#Hello_World>Hello World</a></li>
+            <li class="nav-link"><a href=#Variables>Variables</a></li>
+            <li class="nav-link"><a href=#Conditional_Statements>Conditional Statements</a></li>
+            <li class="nav-link"><a href=#Loops>Loops</a></li>
+            <li class="nav-link"><a href=#References>References</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+    <!-- INTRODUCTION -->
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <p>JavaScript (JS) is a lightweight interpreted (or just-in-time compiled) programming language with first-class functions. 
+                While it is most well-known as the scripting language for Web pages, many non-browser environments also use it, such as Node.js, 
+                Apache CouchDB and Adobe Acrobat. 
+                JavaScript is a prototype-based, multi-paradigm, single-threaded, dynamic language, supporting object-oriented, imperative, 
+                and declarative (e.g. functional programming) styles.</p>
+        </section>
+    <!-- HELLO WORLD -->
+        <section class="main-section" id="Hello_World">
+            <header>Hello World</header>
+            <p>JavaScript is one of the most popular modern web technologies! 
+                As your JavaScript skills grow, your websites will enter a new dimension of power and creativity. </p>
+            <p>
+                However, getting comfortable with JavaScript is more challenging than getting comfortable with HTML and CSS. 
+                You may have to start small, and progress gradually. 
+                To begin, let's examine how to add JavaScript to your page for creating a Hello world! example. 
+                (Hello world! is the standard for introductory programming examples.)</p>
+
+            <pre><code><span style="color: #166534; font-weight: bold;">const</span> myHeading = <span style="color: #16a34a; font-weight: normal;">document</span>.querySelector("h1");
+myHeading.textContent = "Hello world!";</code></pre>
+           
+            <p>The heading text changed to Hello world! using JavaScript. 
+                You did this by using a function called querySelector() to grab a reference to your heading, and then store it in a variable called myHeading. 
+                This is similar to what we did using CSS selectors. When you want to do something to an element, you need to select it first. </p>
+            <p>Following that, the code set the value of the myHeading variable's textContent property (which represents the content of the heading) to Hello world!</p>  
+        </section>
+    <!-- VARIABLES -->
+        <section class="main-section" id="Variables">
+            <header>Variables</header>
+            <p>A variable is a container for a value, like a number we might use in a sum, 
+                or a string that we might use as part of a sentence.</p>
+            <p>Declare a Variable:</p>
+            <pre><code><span style="color: #166534; font-weight: bold;">let</span> myName;
+<span style="color: #166534; font-weight: bold;">let</span> myAge;</code></pre>
+            
+            <p>Initialize the Variable</p>
+            <pre><code>myName = "Chris";
+myAge = 37;</code></pre>
+            
+            <p>You can declare and initialize a variable at the same time, like this:</p>
+            <pre><code><span style="color: #166534; font-weight: bold;">let</span> myDog = "Rover";</code></pre>
+           
+            <p>You'll probably also see a different way to declare variables, using the var keyword:</p>
+            <pre><code><span style="color: #166534; font-weight: bold;">var</span> myName;
+<span style="color: #166534; font-weight: bold;">var</span> myAge;</code></pre>
+            <p>Back when JavaScript was first created, this was the only way to declare variables. 
+                The design of var is confusing and error-prone. So let was created in modern versions of JavaScript, a new keyword for creating variables that works somewhat differently to var, 
+                fixing its issues in the process.</p>
+        </section>
+    <!-- CONDITIONAL STATEMENTS -->
+        <section class="main-section" id="Conditional_Statements">
+            <header>Conditional Statements</header>
+            <p>A conditional statement is a set of commands that executes if a specified condition is true. 
+            JavaScript supports two conditional statements: if...else and switch.</p>
+            <p>An if statement looks like this:</p>
+            <pre><code><span style="color: #166534; font-weight: bold;">if</span> (condition) {
+    statement1;
+}<span style="color: #166534; font-weight: bold;">else</span> {
+    statement2;
+}</code></pre>
+            <p>Here, the condition can be any expression that evaluates to true or false. (See Boolean for an explanation of what evaluates to true and false.)</p>
+
+            <p>If condition evaluates to true, statement_1 is executed. Otherwise, statement_2 is executed. statement_1 and statement_2 can be any statement, including further nested if statements.</p>
+        </section>
+    <!-- LOOPS -->
+    <section class="main-section" id="Loops">
+        <header>Loops</header>
+        <p>Loops offer a quick and easy way to do something repeatedly.</p>
+        <p>These are some types of loops</p>
+        <ul class="types-loops">
+            <li>While Loops</li>
+            <li>for Loops</li>
+            <li>forEach Loops</li>
+            <li>do-while Loops</li>
+        </ul>
+        <p>A for loop repeats until a specified condition evaluates to false. The JavaScript for loop is similar to the Java and C for loop.</p>
+        <pre><code><span style="color: #166534; font-weight: bold;">for</span> (initialization; condition; afterthought)
+    statement</code></pre>
+        
+        <p>The do...while statement repeats until a specified condition evaluates to false.</p>
+        <pre><code><span style="color: #166534; font-weight: bold;">do</span>
+    statement
+<span style="color: #166534; font-weight: bold;">while</span> (condition);</code></pre>
+        <p>statement is always executed once before the condition is checked. (To execute multiple statements, use a block statement ({ }) to group those statements.)</p>
+        
+        <p>A while statement executes its statements as long as a specified condition evaluates to true. A while statement looks as follows:</p>
+        <pre><code><span style="color: #166534; font-weight: bold;">while</span> (condition)
+    statement</code></pre>
+    </section>
+    <!-- REFERENCES -->
+    <section class="main-section" id="References">
+        <header>References</header>
+        <p>All content in this website is from <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">MDN Web Docs</a></p>
+        <p>Find the references per topics below:</p>
+        <ul class="reference-list">
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><span>Introduction</span></a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics" target="_blank"><span>Hello World</span></a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Variables" target="_blank"><span>Variables</span></a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling" target="_blank"><span>Conditionals</span></a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration" target="_blank"><span>Loops</span></a></li>
+        </ul>
+    </section>
+    </main>
+</body>
+</html>
