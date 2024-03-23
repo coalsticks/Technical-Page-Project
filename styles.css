@@ -125,28 +125,23 @@ nav > ul, #main-doc, pre{
 }
 
 
+
 /* insert media query for screen size - 828 */
 
 @media screen and (max-width: 861px) {
-    #navbar{
-        min-width: 862px;
-        max-height: 150px;
-        box-sizing: border-box;
-        display: flex;
-        flex-direction: column;
-        position: fixed;
-        border: 0.1rem solid;
-        background-color: #ecfeff;
-        z-index: 1;
-        }
+  #navbar {
+    min-width: 862px;
+    max-height: 150px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    border: 0.1rem solid;
+    background-color: #ecfeff;
+    z-index: 1;
+  }
 
-    #main-doc{
-        margin-left: 20px;
-        position: relative;
-    }
-}
-
-@media screen and (max-width: 461px) {
-    /* FOR MOBILE ONLY */
-    
+  #main-doc {
+    margin-left: 20px;
+    margin-top: 150px;
+  }
 }
